@@ -1,0 +1,30 @@
+package stucky;
+
+public class apples {
+	public static void main (String args[]) {
+		tuna tunaObject = new tuna("nobody"); 
+		tunaObject.saying();
+	}	
+}
+
+/// in tuna object 
+package stucky;
+
+public class tuna {
+	private String girlName;
+	
+	public tuna (String name) {
+		girlName = name;
+	}
+	
+	public void setName(String name) {
+		girlName = name; 
+	}
+	public String getName() {
+		return girlName;
+	}
+	public void saying() {
+		System.out.printf("Your firdt girlfriend was %s", getName());
+	}
+	
+}
